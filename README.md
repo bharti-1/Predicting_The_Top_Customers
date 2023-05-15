@@ -1,3 +1,3 @@
-# Predicying The Top Customers 
+# Predicting The Top Customers 
 ![Alt text](url "Target")
 
