@@ -13,13 +13,8 @@ This dataset contains information about customers and their interactions with a 
 - Number of Features: 17
 
 **Missing Data:**
-Missing data in this dataset was handled through imputation. This dataset contained missing values in several columns. To ensure data completeness and to avoid potential bias in the analysis, the following imputation strategy was applied:
-Customer Age: Missing values in the "customer_age" column were imputed using the mean age of the dataset. This approach ensures that the missing values are replaced with a representative value that does not significantly impact the overall distribution.
-Marital Status: Missing values in the "marital" column were imputed with the mode (most frequent marital status) of the dataset. Since marital status is a categorical variable, this approach preserves the distribution of marital statuses.
-Balance: Missing values in the "balance" column were imputed using the median balance of the dataset. Median imputation is robust to outliers and helps maintain the integrity of the balance distribution.
-Personal Loan: Missing values in the "personal_loan" column were imputed with "no." This decision was made based on the assumption that customers with missing values did not have a personal loan, which aligns with the majority of the data.
-Communication Type:Missing values in the "communication_type" column were imputed with "unknown." This choice was made since there was no specific information available for these cases.
-Num Contacts in Campaign:Missing values in the "num_contacts_in_campaign" column were imputed using the median number of contacts in the campaign. This imputation method ensures that the missing values are replaced with a typical value for this feature.
+Implemented data cleaning techniques, including capping and flooring to remove outliers, and mean ,median
+and mode imputation to fill missing values, ensuring dataset integrity for accurate analysis and modeling.
 
 **Target Variable:**
 The target variable in this dataset is "term_deposit_subscribed," which indicates whether a customer subscribed to a term deposit (binary classification).
